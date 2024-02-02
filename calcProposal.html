@@ -4,46 +4,183 @@
 <head>
     <meta charset="utf-8">
     <title>Calculus Project Proposal</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            background-color: #f3f1e8;
+            margin: 0 auto;
+            font-family: sans-serif;
+            max-width: 1200px;
+        }
+
+        h1 {
+            color: #99785d;
+            text-align: center;
+            font-family: 'Impact';
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 50px;
+            padding-top: .75em;
+            font-size: 8em;
+        }
+
+        h2 {
+            color: #505050;
+            font-size: 2em;
+            font-family: 'Helvetica';
+            text-align: center;
+            vertical-align: bottom;
+            margin-bottom: -12px;
+            text-align: right;
+
+        }
+
+        h3 {
+            color: #291e1e;
+            font-size: 1.2em;
+            font-family: 'Trebuchet MS';
+            text-align: center;
+
+        }
+
+        p {
+            color: #291e1e;
+            font-family: Helvetica;
+            font-size: 1.05em;
+            line-height: 24px;
+
+        }
+
+        li {
+            color: #291e1e;
+            font-family: Helvetica;
+            font-size: 1.05em;
+            line-height: 24px;
+        }
+
+        a {
+            color: #40525c;
+            font-family: Helvetica;
+            font-size: 1.05em;
+            line-height: 24px;
+        }
+
+        table {
+            padding-top: 1em;
+            padding-bottom: 1em;
+        }
+
+        td {
+            width: 33.33%;
+            vertical-align: top;
+            padding: 15px;
+
+        }
+    </style>
 </head>
 
 <body>
 
-
-
     <h1>Calculus Inquiry Project Proposal</h1>
-    <h2>Coding, Simulating, and Visualizing Newton-Raphson Method</h2>
+    <table dir="rtl" style="
+    width: 75%;
+    padding-left: 5em;
+    padding-right: 5em;
+    margin: auto;">
 
-    <h3>Ben Hoffman – 11/15/2023</h4>
+        <tr>
+            <th rowspan="4" colspan="2" style="max-width: 450px;">
+                <h2 style="text-align: left; font-size: 1.6em;">The Newton Raphson Method</h2>
 
-        <h4>Overview:</h4>
-        <p>I intend to code an algorithm that uses the Newton-Raphson method to calculate the roots of a function. I’d
-            also like to include a visual component that opens a window in which the program graphs the function and the
-            tangent lines which are used to approximate the root. </p>
-        
-        <h4>Method:</h4>
-        <p>The Newton-Raphson method is defined on 
-            <a
-                href="https://www.google.com/url?q=https://en.wikipedia.org/wiki/Newton%2527s_methodsa=Dsource=editorsust=1706564641334218usg=AOvVaw2eziRy-C_TwRSbQ7EZ59Wr"
-                target="_blank">wikipedia 
-            </a>
+            </th>
+        </tr>
+        <tr>
+            <td style="font-size: .75em;">
+                <h2 style="color: orangered; opacity: 50%; transform: skewX(-10deg)">Coding</h2>
+            </td>
 
-        
-        <p>as: “a root-finding algorithm which produces successively better approximations to the roots (or zeroes) of a
-            real-valued function. The most basic version starts with a real-valued function f, its derivative f′, and an
-            initial guess x0 for a root of f. If f satisfies certain assumptions and the initial guess is close, then:
-            x_1 = x_0 - f(x_0)/f’(x_0)</p>
+        </tr>
+        <tr>
+            <td style="font-size: .75em;">
+                <h2 style="color: royalblue;">Simulating</h2>
+            </td>
+        </tr>
+        <tr>
+            <td style="font-size: .75em;">
+                <h2 style="color: limegreen; opacity: 50%; transform: skewX(10deg)">Visualizing</h2>
+            </td>
 
-        <h4>How I’ll do it: </h4>
-        <p>This will likely be done with mostly Python in Pycharm or Google Collab (if the program ends up being
-            computationally light.) I plan to do the computation with SymPy, as I have practice with it from the
-            Explorations. The graphical part will likely also be with Sympy, but MatPlotLib is my backup, thanks to my
-            brief experience with it in Scientific Computing. </p>
+        </tr>
 
-        <p style="text-align: center;">&nbsp;</p>
-        <p Graph not made by me, credit to: <a
-                href="https://www.google.com/url?q=https://iq.opengenus.org/newton-raphson-method/&amp;sa=D&amp;source=editors&amp;ust=1706564641335003&amp;usg=AOvVaw1WAT_r1OOrKghvE7ceO5la"
-                target="_blank">https://iq.opengenus.org/newton-raphson-method/</a></p>
-        
+    </table>
+
+    <br>
+    <br>
+    <!--Work on making columns-->
+    <table>
+        <tr>
+            <td>
+                <h4>Overview:</h4>
+                <p>I intend to code an algorithm that uses the Newton-Raphson method to calculate the roots of a
+                    function. I’d
+                    also like to include a visual component that opens a window in which the program graphs the function
+                    and the
+                    tangent lines which are used to approximate the root. </p>
+
+            </td>
+            <td>
+                <h4>Method:</h4>
+                <p>The Newton-Raphson method is defined on
+                    <a href="https://en.wikipedia.org/wiki/Newton%27s_method" target="_blank">wikipedia
+                    </a>
+                    as:
+                <p>“a root-finding algorithm which produces successively better approximations to the roots (or zeroes)
+                    of a
+                    real-valued function. The most basic version starts with a real-valued function \({f}{}\), its
+                    derivative
+                    \({f'}{}\), and an
+                    initial guess \({x_0}\) for a root of \({f}{}\). If \({f}{}\) satisfies certain assumptions and the
+                    initial guess is close,
+                    then:
+                    \(x_1 = x_0 - \frac{f(x_0)}{f'(x_0)}\)"</p>
+            </td>
+            <td>
+                <h4>How I’ll do it: </h4>
+                <p>This will likely be done with mostly Python in Pycharm or Google Collab (if the program ends up being
+                    computationally light.) I plan to do the computation with SymPy, as I have practice with it from the
+                    Explorations. The graphical part will likely also be with Sympy, but MatPlotLib is my backup, thanks
+                    to my
+                    brief experience with it in Scientific Computing. </p>
+            </td>
+        </tr>
+    </table>
+
+
+    <h3 style="text-align: center;">Example Output</h3>
+
+    <div style="text-align: center;">
+        <img src="images/calcPropGraph.png" width=800 alt="Newton-Raphson method visualized in a graph" title="Newton-Raphson Method Visualized">
+
+    </div>
+    <br>
+
+    <table style="width: 100%;">
+        <tr style="vertical-align: middle;">
+
+            <td style="vertical-align: bottom; line-height: 1.5em;">
+                <a href="index.html" display: block; text-align: center; style="vertical-align: bottom;">Go Back</a>
+
+            </td>
+
+            <td style="vertical-align: middle; line-height: 1.5em; text-align: right; ">
+                <h2 style="text-align: right; font-size: 15px; vertical-align: middle; margin-top: 0px; font-family: sans-serif; font-size: 15px;">Written by Ben Hoffman -
+                    11/15/2023</h2>
+            </td>
+
+        </tr>
+    </table>
+    
 
 
 </body>
