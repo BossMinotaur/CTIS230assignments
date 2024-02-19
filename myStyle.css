@@ -15,7 +15,9 @@ a {
     line-height: 24px;
 }
 a:hover {
-    color:rgb(255, 0, 221);
+    color:rgb(65, 2, 56);
+    background-color: rgb(209, 211, 112);
+    
 }
 a:link {
     background-color:rgb(153, 0, 255);
