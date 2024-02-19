@@ -44,7 +44,6 @@
 		}
 
 		li {
-			color: #f2f2f2;
 			font-family: Helvetica;
 			font-size: 1.05em;
 			line-height: 24px;
@@ -53,13 +52,33 @@
 </head>
 
 <body>
+	<div class="flexible">
+        <div class="content">
+			<a href="index.html" display: block; text-align: center; style="vertical-align: bottom;">Go Back To Landing
+				Page</a>
+		</div>
+        <div class="content">
+			<a href="calcProposal.html" display: block; text-align: center; style="vertical-align: bottom;">Check Out My
+				Calculus Proposal</a>
+		</div>
+        <div class="content">
+			<a href="ctisProposal.html">Computer Programming&NewLine;Proposal</a>
 
+		</div>
+    </div>
+
+
+
+
+	
 	<h1> Final Project Proposal </h1>
+
+
 	<h2 style="text-align: center; color:   #9fa6bc">Ben Hoffman CTIS 210</h2>
 
 	<br>
 
-	<p>
+	<p class="intro">
 		For my final project, I'll make a brick breaker game (Option 1.) This will be a graphical 2D game where the
 		player uses
 		a paddle at the bottom of the screen (controlled by arrow keys) to bounce a ball up to break bricks at the top.
@@ -70,7 +89,7 @@
 	<div>
 		<h2>The game will include the following features: </h2>
 		<ul>
-			<li>A window the game is played in</li>
+			<li class="firstInList">A window the game is played in</li>
 			<li>A movable paddle at the bottom of the screen controlled by the left and right arrow keys</li>
 			<li>A ball that bounces off of bricks and the top and sides of the playing area, and can be bounced back up
 				by the paddle. </li>
@@ -91,10 +110,10 @@
 
 	<br>
 
-	<div>
+	<div id="ConstructRequirementsSection">
 		<h2>To construct this game, I will need to:</h2>
 		<ul>
-			<li>Create a Brick class to represent each brick</li>
+			<li class="firstInList">Create a Brick class to represent each brick</li>
 			<li>Create a Ball class to handle ball behavior</li>
 			<li>Create a Paddle class for paddle behavior</li>
 			<li>Store high scores and brick setup in their own files</li>
@@ -117,13 +136,13 @@
 		more. I also plan to look at open source brick breaker games for ideas and implementations if needed. </p>
 	<br>
 
-	<p>
-		<a href="index.html" display: block; text-align: center; style="vertical-align: bottom;">Go Back To Landing
-			Page</a>
-		<br>
-		<a href="calcProposal.html" display: block; text-align: center; style="vertical-align: bottom;">Check Out My
-			Calculus Proposal</a>
-	</p>
+	<footer>
+		<p>
+			Made By Ben Hoffman
+			<br>
+			Last updated 2024
+		</p>
+	</footer>
 
 	<body>
 

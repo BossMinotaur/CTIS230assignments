@@ -32,10 +32,54 @@ h2 {
     width: fit-content;
     font-style:italic;
     font-weight: 200;
-
-
 }
 
 em {
     background-color: rgb(208, 255, 0);
+}
+
+p, li {
+    color: blueviolet;
+    width: 30em;
+}
+
+th h2 {
+    text-decoration: line-through;
+}
+
+p.intro {
+    outline: 5px dotted green ;
+    padding-left: 2em;
+    margin: 3em;
+    
+}
+
+li.firstInList {
+    color: yellowgreen;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+p#RawsonImgCredit1 {
+    text-decoration: underline;
+}
+
+#indexCalcPropLink {
+    outline: 5px dotted rgb(208, 137, 223) ;
+
+}
+
+#ConstructRequirementsSection {
+    text-transform: capitalize;
+    padding-left: 4em;
+    text-align: right;
+}
+
+#calcImg {
+    float: right;
+    width: 70%;
+}
+
+div.flexible {  
+    display:flex;  
 }
