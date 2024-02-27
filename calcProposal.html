@@ -9,7 +9,7 @@
 
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
+    <script src="testscript.js" defer></script>
     <style>
         body {
             background-color: #f3f1e8;
@@ -85,7 +85,14 @@
 
 <body>
 
-    <h1>Calculus Inquiry Project Proposal</h1>
+    <h1 id="buttontest">Calculus Inquiry Project Proposal</h1>
+    <br>
+    <button id="thebutton">Epilepsy Mode</button>
+    <br>
+    <button id="unshadowButton">Unshadow Header</button>
+    <br>
+
+    <input type="text" id="myinput">
     <table dir="rtl" style="
     width: 75%;
     padding-left: 5em;
@@ -119,13 +126,17 @@
     </table>
 
     <br>
+
+
+
     <br>
     <!--Work on making columns-->
     <table>
         <tr>
             <td>
                 <h4>Overview:</h4>
-                <p class="intro">I intend to code an algorithm that uses the Newton-Raphson method to calculate the roots of a
+                <p class="intro">I intend to code an algorithm that uses the Newton-Raphson method to calculate the
+                    roots of a
                     function. I’d
                     also like to include a visual component that opens a window in which the program graphs the function
                     and the
@@ -150,7 +161,8 @@
             </td>
             <td>
                 <h4>How I’ll do it: </h4>
-                <p>This will likely be done with mostly Python in Pycharm or Google Collab (if the program ends up being
+                <p id="firsttest">This will likely be done with mostly Python in Pycharm or Google Collab (if the
+                    program ends up being
                     computationally light.) I plan to do the computation with SymPy, as I have practice with it from the
                     Explorations. The graphical part will likely also be with Sympy, but MatPlotLib is my backup, thanks
                     to my
@@ -160,7 +172,7 @@
     </table>
 
 
-    <h3 style="text-align: center;">Example Output</h3>
+    <h3 id="yetAnotherBadID", style="text-align: center;">Example Output</h3>
 
     <div style="text-align: center;">
         <img src="images/calcPropGraph.png" width=800 alt="Newton-Raphson method visualized in a graph"
@@ -168,6 +180,9 @@
 
     </div>
     <br>
+
+
+
 
     <p style="text-align: center;">
         <a href="index.html" display: block; text-align: center; style="vertical-align: bottom;">Go Back To Landing
