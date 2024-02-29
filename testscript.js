@@ -16,7 +16,7 @@ myitem2.addEventListener("click", onClick2);
 myitem.addEventListener("mouseout", onMouseOut);
 myitem2.addEventListener("mouseout", onMouseOut);
 thebutton.addEventListener("click", onButtonClick);
-thebutton.addEventListener("click", toggleEpilepsyMode);
+thebutton.addEventListener("click", toggleDiscoMode);
 unshadowButton.addEventListener("click", onUnshadowButtonClick);
 
 // Defines the onClick function that changes the text color of the selected element to green
@@ -47,13 +47,13 @@ function onUnshadowButtonClick() {
 
 
 
-// Epilepsy mode ⬇⬇
-isEpilepsyModeOn = false;
+// Disco mode ⬇⬇
+isDiscoModeOn = false;
 thebutton.style.backgroundColor = `oklch(${lightness}%, ${chroma / 2}, ${Math.random() * 360})`;
 
-function toggleEpilepsyMode() {
-    isEpilepsyModeOn = !isEpilepsyModeOn;
-    if (isEpilepsyModeOn) {
+function toggleDiscoMode() {
+    isDiscoModeOn = !isDiscoModeOn;
+    if (isDiscoModeOn) {
         function incrementColor() {
             document.body.style.backgroundColor = `oklch(${lightness}%, ${chroma}, ${hue})`;
             thebutton.style.backgroundColor = "";
@@ -68,7 +68,7 @@ function toggleEpilepsyMode() {
     }
     
 }
-// Epilepsy mode ⬆⬆
+// Disco mode ⬆⬆
 
 textentry = document.getElementById("myinput");   
 textentry.addEventListener("change", onChange);
