@@ -18,6 +18,62 @@
             max-width: 1200px;
         }
 
+        @media screen and (max-width: 600px) {
+            body {
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+        }
+        @media screen and (min-width: 1000px) {
+            p, li {
+            width: 20em;
+        }
+
+        }
+        @media screen and (orientation: portrait) {
+
+            /* Change table rows to display as block elements */
+            table#specificationsTable tr {
+                display: block;
+                width: 100%;
+                /* Ensure rows take full width */
+            }
+
+            /* Adjust table data cells */
+            table#specificationsTable td {
+                display: block;
+                width: auto;
+                /* Reset width */
+                padding: 0;
+                /* Reset padding */
+            }
+
+            td p {
+                margin-left: 3%;
+                margin-right: 3%;
+
+            }
+
+            td {
+                margin-left: 3%;
+            }
+
+            th {
+                width: 20em;
+            }
+
+            th h2 {
+                width: 15em;
+            }
+
+
+        }
+        /* img {
+            width: 100vw;
+        } */
+
+        
+
         h1 {
             color: #99785d;
             text-align: center;
@@ -78,8 +134,9 @@
             width: 33.33%;
             vertical-align: top;
             padding: 15px;
-
         }
+
+
     </style>
 </head>
 
@@ -87,7 +144,8 @@
 
     <h1 id="buttontest">Calculus Inquiry Project Proposal</h1>
     <br>
-    <button id="thebutton">Disco Mode</button>
+        <button id="thebutton">Disco Mode</button>
+
     <br>
     <button id="unshadowButton">Unshadow Header</button>
     <br>
@@ -131,7 +189,7 @@
 
     <br>
     <!--Work on making columns-->
-    <table>
+    <table id="specificationsTable">
         <tr>
             <td>
                 <h4>Overview:</h4>
@@ -172,7 +230,7 @@
     </table>
 
 
-    <h3 id="yetAnotherBadID", style="text-align: center;">Example Output</h3>
+    <h3 id="yetAnotherBadID" , style="text-align: center;">Example Output</h3>
 
     <div style="text-align: center;">
         <img src="images/calcPropGraph.png" width=800 alt="Newton-Raphson method visualized in a graph"
@@ -185,11 +243,11 @@
 
 
     <p style="text-align: center;">
-        <a href="index.html" display: block; text-align: center; style="vertical-align: bottom;">Go Back To Landing
+        <a href="index.html" display: block; style="vertical-align: bottom;">Go Back To Landing
             Page</a>
         <br>
         <br>
-        <a href="ctisProposal.html" display: block; text-align: center; style="vertical-align: bottom;">Check Out My
+        <a href="ctisProposal.html" display: block; style="vertical-align: bottom;">Check Out My
             CTIS Proposal</a>
     </p>
 

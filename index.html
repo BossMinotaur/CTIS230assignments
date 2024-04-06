@@ -12,14 +12,31 @@
         body {
             background-color: #DADBDF;
             margin-top: 40px;
-            margin-left: 100px;
+            margin-left: 10%;
             font-family: Verdana, sans-serif;
             max-width: 90%;
             background-image: url('images/joshua-rawson-harris-KRELIShKxTM-unsplash.jpg');
-            background-size: 800px;
+            background-size: 60vh;
             background-repeat: no-repeat;
-            background-position-y: 50px;
-            background-position-x: 570px;
+            background-position-y: 20vh;
+            background-position-x: 43.5vw;
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+
+            #indexCalcPropLink {
+                margin-top: 25vh;
+                display: inline-block;
+            }
+        }
+
+
+        #indexCalcPropLink {
+            outline: 5px dotted rgb(208, 137, 223) ;
         }
 
         h1 {
@@ -28,11 +45,11 @@
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             font-weight: bold;
             margin-top: 140px;
-            margin-bottom: 100px;
+            margin-bottom: 11.3vh;
             font-size: 90px;
             letter-spacing: -1px;
-
         }
+
 
         p {
             color: #737C81;
@@ -47,7 +64,8 @@
             font-size: 24px;
             line-height: 2.5em;
             text-align: center;
-            
+            display: inline-block;
+            margin-bottom: vh;
         }
     </style>
 </head>

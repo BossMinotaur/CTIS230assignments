@@ -69,12 +69,3 @@ function toggleDiscoMode() {
     
 }
 // Disco mode ⬆⬆
-
-textentry = document.getElementById("myinput");   
-textentry.addEventListener("change", onChange);
-
-function onChange() {  
-    newtext = myinput.value;  
-    otheritem.innerHTML = newtext;  
-}
- 

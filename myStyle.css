@@ -66,25 +66,21 @@ p#RawsonImgCredit1 {
     text-decoration: underline;
 }
 
-#indexCalcPropLink {
-    outline: 5px dotted rgb(208, 137, 223) ;
-
-}
 
 #ConstructRequirementsSection {
     text-transform: capitalize;
     padding-left: 4em;
-    text-align: right;
+    /* text-align: right; */
     
 }
 
 #calcImg {
-    float: right;
     width: 70%;
 }
 
 div.flexible {  
     display:flex;  
+    width:fit-content;
 }
 
 button {
@@ -98,3 +94,9 @@ button {
     margin: 0 auto;  
     font-weight: 600;   
 }
+/* 
+.centerDiv {
+    width: 135vw;
+    align-content: center;
+} */
+
